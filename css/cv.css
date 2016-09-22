@@ -71,14 +71,13 @@ table.help tr td {
 .content {
   display: block;
   margin: 0 auto;
-  padding: 1em 1em 5em;
+  padding: 1em 0.5em 5em;
   min-height: 100vh;
 }
 .content[data-layer="startup"] {
-  display: none;
+  display: block;
   background: #ff6347;
   color: #fff;
-  text-align: center;
 }
 .content[data-layer="startup"] h1 {
   margin: 1em auto 0;
@@ -93,7 +92,7 @@ table.help tr td {
   font-weight: 400;
 }
 .content[data-layer="profile"] {
-  display: block;
+  display: none;
   background: #2c3e50;
   color: #fff;
 }
@@ -125,6 +124,20 @@ table.help tr td {
 }
 .content[data-layer="about"] {
   display: none;
+  background: #8e44ad;
+  color: #fff;
+}
+.content[data-layer="about"] h1 {
+  margin: 1em auto 0;
+  font-size: 72pt;
+  border: 2px solid #fff;
+  width: 200px;
+  height: 150px;
+}
+.content[data-layer="about"] h2 {
+  font-size: 24pt;
+  color: #ddd;
+  font-weight: 400;
 }
 .content .detail {
   width: 300px;

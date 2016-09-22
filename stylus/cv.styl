@@ -71,14 +71,13 @@ table.help
 .content
   display block
   margin 0 auto
-  padding 1em 1em 5em
+  padding 1em .5em 5em
   min-height 100vh
   
   &[data-layer="startup"]
-    display none
+    display block
     background tomato
     color white
-    text-align center
     
     h1
       margin 1em auto 0
@@ -93,7 +92,7 @@ table.help
       font-weight 400
   
   &[data-layer="profile"]
-    display block
+    display none
     background #2c3e50
     color white
     
@@ -125,6 +124,20 @@ table.help
     
   &[data-layer="about"]
     display none
+    background #8e44ad
+    color white
+    
+    h1
+      margin 1em auto 0
+      font-size 72pt
+      border 2px solid white
+      width 200px
+      height 150px
+      
+    h2
+      font-size 24pt
+      color #ddd
+      font-weight 400
     
   .detail
     width 300px

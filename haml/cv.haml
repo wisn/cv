@@ -10,7 +10,7 @@
   %body{unSelectable: "on", onSelectStart: "return false"}
     #msg
 
-    .content#startup{"data-layer": "startup"}
+    .content#startup{"data-layer": "startup", align: "center"}
       %h1 >_
       %h2 Pro (CMD) Club
 
@@ -64,7 +64,7 @@
 
       .divider
       .detail{align: "left"}
-        %h3 Programming Language
+        %h3 Programming Languages
         .box
           .progress
             86
@@ -91,17 +91,132 @@
 
         .box
           .progress
+            40
+            %sub %
+          .value
+            C
+            .type Procedural
+
+        .box
+          .progress
             38
             %sub %
           .value
             Haskell
             .type Pure Functional
 
+      .divider
+      .detail{align: "left"}
+        %h3 Frameworks
+        .box
+          .progress
+            64
+            %sub %
+          .value
+            Rails
+            .type Ruby Web Framework
+
+        .box
+          .progress
+            60
+            %sub %
+          .value
+            React
+            .type JS Library for UI
+
+        .box
+          .progress
+            56
+            %sub %
+          .value
+            Rspec
+            .type Ruby BDD Framework
+
+        .box
+          .progress
+            42
+            %sub %
+          .value
+            Express
+            .type NodeJS Web Framework
+
+        .box
+          .progress
+            21
+            %sub %
+          .value
+            Mocha
+            .type JavaScript Test Framework
+
+      .divider
+      .detail{align: "left"}
+        %h3 Databases
+        .box
+          .progress
+            89
+            %sub %
+          .value
+            MongoDB
+            .type NoSQL Database
+
+        .box
+          .progress
+            31
+            %sub %
+          .value
+            ArangoDB
+            .type NoSQL Database
+
+      .divider
+      .detail{align: "left"}
+        %h3 Tools
+        .box
+          .progress
+            95
+            %sub %
+          .value
+            Gulp
+            .type Automation Tool
+
+        .box
+          .progress
+            57
+            %sub %
+          .value
+            Git
+            .type Version Control System
+
+        .box
+          .progress
+            18
+            %sub %
+          .value
+            Docker
+            .type Container Engine
+
+      .divider
+      I'm a
+      %mark Junior Software Engineer
+      in a Startup. Learn programming
+      %mark since 2010
+      .
+
     .content#education{"data-layer": "education"}
 
     .content#portofolio{"data-layer": "portofolio"}
 
-    .content#about{"data-layer": "about"}
+    .content#about{"data-layer": "about", align: "center"}
+      %h1 >_
+      %h2 Pro (CMD) Club
+
+      .divider
+      Built with
+      %mark HAML
+      ,
+      %mark Stylus
+      , and 
+      %mark ECMAScript
+      natively in one night!
 
     .command
       %span.cmd > 
