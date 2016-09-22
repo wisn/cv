@@ -1,0 +1,111 @@
+body
+  margin 0
+  padding 0
+  background black
+  color white
+  font-family Arial, Helvetica, sans-serif
+  font-size 14pt
+  cursor default
+  -moz-user-select none
+  -webkit-user-select none
+  -ms-user-select none
+  user-select none
+  -o-user-select none
+
+mark
+  background rgba(0, 0, 0, .5)
+  color white
+  padding 2px 8px
+  margin 0 4px
+  
+table.help
+  margin 0 auto
+  text-align left
+  
+  tr
+    width 300px
+    
+    td
+      padding 4px 2px
+
+#msg
+  display block
+  position fixed
+  right 5px
+  top 5px
+  background grey
+  color white
+  border 2px solid white
+  padding 1em 2em
+  z-index 9
+  cursor pointer
+  max-width 300px
+  word-wrap break-word
+  transition .5s margin-top
+  margin-top -100px
+  
+.command
+  display block
+  position fixed
+  left 0
+  bottom 0
+  padding .5em 1em
+  background #34495e
+  color white
+  font-size 20pt
+  width 100%
+  
+  form
+    display inline-block
+    
+    .prompt
+      margin 0 0 0 .5em
+      display inline-block
+      background #34495e
+      color white
+      border none
+      width 80vw
+      font-size 20pt
+
+.content
+  display block
+  margin 0 auto
+  padding 1em 1em 5em
+  min-height 100vh
+  
+  &[data-layer="startup"]
+    display none
+    background tomato
+    color white
+    text-align center
+    
+    h1
+      margin 1em auto 0
+      font-size 72pt
+      border 2px solid white
+      width 200px
+      height 150px
+      
+    h2
+      font-size 24pt
+      color #eee
+      font-weight 400
+  
+  &[data-layer="profile"]
+    display block
+    background #2c3e50
+    color white
+    
+    .avatar
+      width 200px
+      height 200px
+      border-radius 100%
+  
+  &[data-layer="education"]
+    display none
+  
+  &[data-layer="portofolio"]
+    display none
+    
+  &[data-layer="about"]
+    display none

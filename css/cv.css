@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  cursor: default;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+mark {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 2px 8px;
+  margin: 0 4px;
+}
+table.help {
+  margin: 0 auto;
+  text-align: left;
+}
+table.help tr {
+  width: 300px;
+}
+table.help tr td {
+  padding: 4px 2px;
+}
+#msg {
+  display: block;
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  background: #808080;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 1em 2em;
+  z-index: 9;
+  cursor: pointer;
+  max-width: 300px;
+  word-wrap: break-word;
+  transition: 0.5s margin-top;
+  margin-top: -100px;
+}
+.command {
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 0.5em 1em;
+  background: #34495e;
+  color: #fff;
+  font-size: 20pt;
+  width: 100%;
+}
+.command form {
+  display: inline-block;
+}
+.command form .prompt {
+  margin: 0 0 0 0.5em;
+  display: inline-block;
+  background: #34495e;
+  color: #fff;
+  border: none;
+  width: 80vw;
+  font-size: 20pt;
+}
+.content {
+  display: block;
+  margin: 0 auto;
+  padding: 1em 1em 5em;
+  min-height: 100vh;
+}
+.content[data-layer="startup"] {
+  display: none;
+  background: #ff6347;
+  color: #fff;
+  text-align: center;
+}
+.content[data-layer="startup"] h1 {
+  margin: 1em auto 0;
+  font-size: 72pt;
+  border: 2px solid #fff;
+  width: 200px;
+  height: 150px;
+}
+.content[data-layer="startup"] h2 {
+  font-size: 24pt;
+  color: #eee;
+  font-weight: 400;
+}
+.content[data-layer="profile"] {
+  display: block;
+  background: #2c3e50;
+  color: #fff;
+}
+.content[data-layer="profile"] .avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.content[data-layer="education"] {
+  display: none;
+}
+.content[data-layer="portofolio"] {
+  display: none;
+}
+.content[data-layer="about"] {
+  display: none;
+}
