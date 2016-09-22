@@ -76,7 +76,7 @@ table.help tr td {
 }
 .content[data-layer="startup"] {
   display: block;
-  background: #ff6347;
+  background: #c0392b;
   color: #fff;
 }
 .content[data-layer="startup"] h1 {
