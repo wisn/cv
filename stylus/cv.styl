@@ -54,6 +54,7 @@ table.help
   color white
   font-size 20pt
   width 100%
+  box-shadow 0 0 .25em #222
   
   form
     display inline-block
@@ -88,7 +89,7 @@ table.help
       
     h2
       font-size 24pt
-      color #eee
+      color #ddd
       font-weight 400
   
   &[data-layer="profile"]
@@ -97,9 +98,24 @@ table.help
     color white
     
     .avatar
+      display block
+      margin 0 auto
       width 200px
       height 200px
       border-radius 100%
+    
+    h1
+      font-size 28pt
+      margin .25em 0 0
+    
+    h2
+      font-size 20pt
+      margin 0 0 0.5em
+      color #ddd
+      
+    h3
+      font-size 16pt
+      color #bbb
   
   &[data-layer="education"]
     display none
@@ -109,3 +125,37 @@ table.help
     
   &[data-layer="about"]
     display none
+    
+  .detail
+    width 300px
+    
+    .box
+      background #222
+      color #efefef
+      border 1px solid #efefef
+      margin-bottom 8px
+      
+      .progress
+        display inline-block
+        background #bbb
+        color #000
+        font-size 34pt
+        padding 2px
+        
+        sub
+          font-size 12pt
+      
+      .value
+        display inline-block
+        font-size 16pt
+        
+        .type
+          font-size 12pt
+          color #bbb
+      
+      &:nth-child(2n)
+        background #000
+        color #fff
+
+.divider
+  padding 8px

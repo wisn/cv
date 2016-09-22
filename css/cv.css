@@ -54,6 +54,7 @@ table.help tr td {
   color: #fff;
   font-size: 20pt;
   width: 100%;
+  box-shadow: 0 0 0.25em #222;
 }
 .command form {
   display: inline-block;
@@ -88,7 +89,7 @@ table.help tr td {
 }
 .content[data-layer="startup"] h2 {
   font-size: 24pt;
-  color: #eee;
+  color: #ddd;
   font-weight: 400;
 }
 .content[data-layer="profile"] {
@@ -97,9 +98,24 @@ table.help tr td {
   color: #fff;
 }
 .content[data-layer="profile"] .avatar {
+  display: block;
+  margin: 0 auto;
   width: 200px;
   height: 200px;
   border-radius: 100%;
+}
+.content[data-layer="profile"] h1 {
+  font-size: 28pt;
+  margin: 0.25em 0 0;
+}
+.content[data-layer="profile"] h2 {
+  font-size: 20pt;
+  margin: 0 0 0.5em;
+  color: #ddd;
+}
+.content[data-layer="profile"] h3 {
+  font-size: 16pt;
+  color: #bbb;
 }
 .content[data-layer="education"] {
   display: none;
@@ -109,4 +125,38 @@ table.help tr td {
 }
 .content[data-layer="about"] {
   display: none;
+}
+.content .detail {
+  width: 300px;
+}
+.content .detail .box {
+  background: #222;
+  color: #efefef;
+  border: 1px solid #efefef;
+  margin-bottom: 8px;
+}
+.content .detail .box .progress {
+  display: inline-block;
+  background: #bbb;
+  color: #000;
+  font-size: 34pt;
+  padding: 2px;
+}
+.content .detail .box .progress sub {
+  font-size: 12pt;
+}
+.content .detail .box .value {
+  display: inline-block;
+  font-size: 16pt;
+}
+.content .detail .box .value .type {
+  font-size: 12pt;
+  color: #bbb;
+}
+.content .detail .box:nth-child(2n) {
+  background: #000;
+  color: #fff;
+}
+.divider {
+  padding: 8px;
 }
