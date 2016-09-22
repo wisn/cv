@@ -118,6 +118,29 @@ table.help
   
   &[data-layer="education"]
     display none
+    background #27ae60
+    color white
+    
+    .event
+      margin 0 auto
+      width: 300px
+      margin-bottom 16px
+    
+      .year
+        display inline-block
+        padding .5em 1em
+        font-size 14px        
+        background #ddd
+        color #222
+        text-align right
+        
+      &:nth-child(2n)
+        .year
+          background #222
+          color #ddd
+        
+      .timeline
+        text-align left
   
   &[data-layer="portofolio"]
     display none

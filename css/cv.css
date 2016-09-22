@@ -118,6 +118,28 @@ table.help tr td {
 }
 .content[data-layer="education"] {
   display: none;
+  background: #27ae60;
+  color: #fff;
+}
+.content[data-layer="education"] .event {
+  margin: 0 auto;
+  width: 300px;
+  margin-bottom: 16px;
+}
+.content[data-layer="education"] .event .year {
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-size: 14px;
+  background: #ddd;
+  color: #222;
+  text-align: right;
+}
+.content[data-layer="education"] .event:nth-child(2n) .year {
+  background: #222;
+  color: #ddd;
+}
+.content[data-layer="education"] .event .timeline {
+  text-align: left;
 }
 .content[data-layer="portofolio"] {
   display: none;
