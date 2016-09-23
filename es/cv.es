@@ -48,7 +48,7 @@ document.getElementById("cmd").addEventListener("submit", (node) => {
     } else {
 
       if (prompt.length > 2) {
-        msg.innerHTML = `It\'s' should be one argument...`
+        msg.innerHTML = `It\'s should be one argument...`
         msg.style.marginTop = "0px"
       }
 
@@ -88,3 +88,13 @@ function parseCommand(cmd) {
     return [...getLine]
   }
 }
+
+document.getElementById("parser").addEventListener("click", (node) => {
+  var msg = document.getElementById("msg")
+
+  msg.style.marginTop = "0px" 
+  msg.innerHTML = "It\'s used in this CV!"
+
+  node.preventDefault()
+  return false
+})
